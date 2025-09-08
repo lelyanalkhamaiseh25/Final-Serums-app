@@ -8,7 +8,7 @@ import Bootstrap from "../Components/Bootstrap";
 
 import "../Style/Home.css";
 
-export const Home = ({ user }) => {   // ✅ accept user from App.jsx
+export const Home = ({ user }) => {   
     const [bestSellers, setBestSellers] = useState([]);
     const [counts, setCounts] = useState([]);
 
