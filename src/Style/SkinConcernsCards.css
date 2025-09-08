@@ -1,0 +1,114 @@
+.skin-concerns-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #ff8a9c;
+    margin-bottom: 0.5rem;
+}
+
+.skin-concerns-desc {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.skin-concerns-section {
+    background: #f5f5f7;
+    padding: 2rem 1rem 4rem 1rem;
+    text-align: center;
+}
+
+.skin-concerns-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 0.2rem;
+}
+
+.skin-concern-card {
+    background: linear-gradient(135deg, #fff 80%, #f8e6ea 100%);
+    border-radius: 20px;
+    box-shadow: 0 4px 24px #e6648233;
+    padding-top: 1.5rem;
+    width: 400px;
+    min-height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skin-concern-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px #e6648255;
+}
+
+.skin-concern-icon-bg {
+    background: radial-gradient(circle, #ffc0a0 0%, #ff97af 100%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 2px 16px #e6648233;
+}
+
+.skin-concern-icon {
+    font-size: 2.5rem;
+    color: #fff;
+    line-height: 1;
+}
+
+.skin-concern-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #222;
+    text-align: center;
+}
+
+.skin-concern-desc {
+    font-size: 1.1rem;
+    color: #888;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.skin-concern-btn {
+    margin: 2.5rem auto 0 auto;
+    padding: 0.7rem 2rem;
+    background: #fff;
+    color: #ff8a9c;
+    border: 2px solid #ff8a9c;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: block;
+
+}
+
+.skin-concern-btn:hover {
+    background: #ff8a9c;
+    color: #fff;
+
+}
+
+.skin-concerns-section a {
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .skin-concerns-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skin-concern-card {
+        width: 90%;
+        max-width: 400px;
+    }
+}

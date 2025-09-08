@@ -1,0 +1,104 @@
+.serum-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #e6648233;
+    padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.serum-card:hover {
+    transform: translateY(-6px) scale(1.03);
+}
+
+.serum-img-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.serum-img {
+    width: 210px;
+    height: 290px;
+    object-fit: fill;
+    border-radius: 12px;
+    background: #f8f8f8;
+}
+
+.serum-new-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #ff8a9c;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 12px;
+    z-index: 2;
+    box-shadow: 0 2px 8px #e6648233;
+
+}
+
+.serum-info {
+    width: 100%;
+    text-align: center;
+}
+
+.serum-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0.5rem 0 0.2rem 0;
+    color: #2b2329;
+}
+
+.serum-price {
+    color: #ff8a9c;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.serum-desc {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1rem;
+    min-height: 40px;
+}
+
+.serum-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.serum-qty {
+    width: 50px;
+    padding: 0.3rem;
+    border: 1px solid #ff8a9c;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.serum-add-btn {
+    padding: 0.4rem 1.1rem;
+    background: linear-gradient(90deg, #ff8a9c, #f8b694);
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.serum-add-btn:hover {
+    background: linear-gradient(90deg, #f8b694, #ff8a9c);
+}

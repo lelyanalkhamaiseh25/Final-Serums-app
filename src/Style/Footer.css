@@ -1,0 +1,178 @@
+.footer {
+    background: #2c2021;
+    color: #fff;
+    padding: 3rem 1rem 1.5rem 1rem;
+    margin-top: 1rem;
+    font-family: inherit;
+
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.footer-col {
+    flex: 1 1 220px;
+    min-width: 220px;
+    margin-bottom: 1.5rem;
+}
+
+.logo-col {
+    flex: 2 1 350px;
+}
+
+.footer-logo {
+    font-size: 2.rem;
+    font-weight: 600;
+    color: #ff8a9c;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.footer-desc {
+    font-size: 1.3rem;
+    color: #e7dede;
+    margin-bottom: 2.2rem;
+    max-width: 350px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+
+.footer-col h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    color: #fff;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col li {
+    font-size: 1.1rem;
+    margin-bottom: 1.1rem;
+    color: #e7dede;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+.footer-col li:hover {
+    color: #ff8a9c;
+}
+
+.footer-links {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links:hover {
+    color: #ff8a9c;
+}
+
+.footer-updated-desc {
+    font-size: 1.2rem;
+    color: #e7dede;
+    margin-bottom: 1.2rem;
+    max-width: 300px;
+}
+
+.footer-subscribe-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.footer-subscribe-input {
+    padding: 0.9rem 1rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+    width: 220px;
+    outline: none;
+    margin-right: 0.5rem;
+}
+
+.footer-subscribe-btn {
+    background: #ff8a9c;
+    border: none;
+    border-radius: 10px;
+    padding: 0.8rem 1.1rem;
+    color: #fff;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.footer-subscribe-btn:hover {
+    background: #e66482;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #6d5a5a;
+    margin: 2.5rem 0 1.5rem 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e7dede;
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-bottom-links a {
+    color: #e7dede;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.footer-bottom-links a:hover {
+    color: #ff8a9c;
+}
+
+@media (max-width: 900px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+    }
+
+    .footer-col {
+        min-width: 0;
+    }
+
+    .logo-col {
+        margin-bottom: 2rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.7rem;
+    }
+}

@@ -1,0 +1,101 @@
+nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.navLeft .title {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-decoration: none;
+    background-image: linear-gradient(90deg, #f48ca8, #f7a8a1, #fbc2a5);
+    color: transparent;
+    background-clip: text;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.navMiddle {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navMiddle ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navMiddle ul li a {
+    text-decoration: none;
+    color: #2b2329;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.navMiddle ul li a:hover {
+    color: #e66482;
+}
+
+
+.navRight {
+    display: flex;
+    gap: 1rem;
+}
+
+.navRight a {
+    text-decoration: none;
+    color: #f48ca8;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    margin-left: 1rem;
+}
+
+.navBtn {
+    background-color: #f48ca8;
+    /* hot pink */
+    color: white !important;
+    /* ✅ force white text */
+    border: none;
+    border-radius: 25px;
+    /* pill shape */
+    width: 90px;
+    height: 36px;
+    line-height: 36px;
+    /* vertical centering */
+    text-align: center;
+    /* horizontal centering */
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 10px;
+    text-decoration: none !important;
+    /* ✅ remove underline from links */
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.navBtn:hover {
+    background-color: #f48ca8;
+    /* deeper pink */
+    color: #fff !important;
+    /* ✅ stay white on hover */
+}
+
+.navRight {
+    display: flex;
+    align-items: center;
+}
