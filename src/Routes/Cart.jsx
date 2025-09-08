@@ -7,7 +7,6 @@ function Cart({ user }) {
     const [promo, setPromo] = useState("");
     const [promoApplied, setPromoApplied] = useState(false);
 
-    // ✅ Load cart from backend
     useEffect(() => {
         if (!user) return;
         fetch(`http://localhost:5000/api/users/cart/${user.email}`)
@@ -16,7 +15,7 @@ function Cart({ user }) {
             .catch((err) => console.error("Error fetching cart:", err));
     }, [user]);
 
-    // ✅ Calculate totals
+ 
     const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
     const saved = cart.reduce(
         (sum, item) =>
@@ -24,7 +23,6 @@ function Cart({ user }) {
         0
     );
 
-    // ✅ Update quantity
     const handleQuantityChange = async (id, newQty) => {
         if (!user) return;
 
@@ -34,13 +32,12 @@ function Cart({ user }) {
             body: JSON.stringify({ email: user.email, quantity: newQty }),
         });
 
-        // Refresh cart after update
+   
         fetch(`http://localhost:5000/api/users/cart/${user.email}`)
             .then((res) => res.json())
             .then((data) => setCart(data));
     };
 
-    // ✅ Delete product from cart
     const handleDelete = async (id) => {
         if (!user) return;
 
@@ -50,7 +47,6 @@ function Cart({ user }) {
             body: JSON.stringify({ email: user.email }),
         });
 
-        // Refresh cart after delete
         fetch(`http://localhost:5000/api/users/cart/${user.email}`)
             .then((res) => res.json())
             .then((data) => setCart(data));
@@ -64,7 +60,6 @@ function Cart({ user }) {
         <div className="cart-page">
             <h1 className="cart-title">Shopping Cart</h1>
             <div className="cart-main">
-                {/* Cart Items */}
                 <div className="cart-items">
                     {cart.length === 0 ? (
                         <p>Your cart is empty.</p>
@@ -114,7 +109,6 @@ function Cart({ user }) {
                     )}
                 </div>
 
-                {/* Cart Summary */}
                 <div className="cart-summary">
                     <h2>Order Summary</h2>
                     <div className="cart-promo">

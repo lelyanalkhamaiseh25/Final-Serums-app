@@ -12,12 +12,12 @@ export const Home = ({ user }) => {
     const [bestSellers, setBestSellers] = useState([]);
     const [counts, setCounts] = useState([]);
 
-    // ✅ Fetch products from backend
+
     useEffect(() => {
         fetch("http://localhost:5000/api/products")
             .then((res) => res.json())
             .then((data) => {
-                const topFour = data.slice(0, 4); // Pick first 4 as best sellers
+                const topFour = data.slice(0, 4); 
                 setBestSellers(topFour);
                 setCounts(Array(topFour.length).fill(1));
             })
@@ -32,7 +32,7 @@ export const Home = ({ user }) => {
         });
     };
 
-    // ✅ Add to Cart (same as Shop.jsx)
+
     const handleAddToCart = async (idx) => {
         if (!user) {
             alert("Please log in to add items to cart.");
@@ -83,7 +83,7 @@ export const Home = ({ user }) => {
 
     return (
         <div>
-            {/* Hero Section */}
+      
             <div className="home-hero-section">
                 <img src={homepic4} alt="Serum bottles" className="home-image" />
                 <div className="home-content">
@@ -98,7 +98,7 @@ export const Home = ({ user }) => {
                 </div>
             </div>
 
-            {/* Best Seller Section */}
+    
             <div className="bestseller-section">
                 <h2 className="bestseller-title">Best Seller Serums</h2>
                 <p className="bestseller-desc">
@@ -112,7 +112,7 @@ export const Home = ({ user }) => {
                             serum={serum}
                             quantity={counts[idx]}
                             onQuantityChange={(val) => handleQuantityChange(idx, val)}
-                            onAddToCart={() => handleAddToCart(idx)}   // ✅ added
+                            onAddToCart={() => handleAddToCart(idx)}  
                         />
                     ))}
                 </div>
@@ -122,7 +122,6 @@ export const Home = ({ user }) => {
                 </Link>
             </div>
 
-            {/* Skin Concerns Section */}
             <section className="skin-concerns-section">
                 <h2 className="skin-concerns-title">Skin Concerns</h2>
                 <p className="skin-concerns-desc">
@@ -134,7 +133,6 @@ export const Home = ({ user }) => {
                     <button className="skin-concern-btn">Explore Solutions</button>
                 </Link>
 
-                {/* Subscribe Box */}
                 <div className="subscribe-box">
                     <h2 className="subscribe-title">Get 15% Off Your First Order</h2>
                     <p className="subscribe-desc">
@@ -152,8 +150,7 @@ export const Home = ({ user }) => {
                         Subscribe
                     </button>
                 </div>
-                {/* Joke Section */}
-
+        
                 <div className="alert alert-info" style={{ marginTop: "20px" }}>
                     <strong>😂 Random Joke:</strong> {joke || "Loading a joke..."}
                 </div>

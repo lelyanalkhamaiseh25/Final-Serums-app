@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "../Style/Ingredients.css";
 
-// Example: Simulated fetch from database
 const fetchIngredients = () =>
     Promise.resolve([
         {
@@ -66,7 +65,7 @@ const fetchIngredients = () =>
         }
     ]);
 
-// Icon SVGs
+
 const icons = {
     leaf: (
         <svg width="44" height="44" fill="none"><circle cx="22" cy="22" r="22" fill="#6edba8" /><path d="M30 18c-6 0-12 6-12 12" stroke="#fff" strokeWidth="2" strokeLinecap="round" /><path d="M18 30c0-6 6-12 12-12" stroke="#fff" strokeWidth="2" strokeLinecap="round" /></svg>
@@ -125,11 +124,11 @@ function Ingredients() {
                         </div>
                     ))}
                 </div>
-                {/* Explore Serums Button */}
+     
                 <a href="/shop" className="explore-serums-btn">Explore Serums</a>
             </section>
 
-            {/* Sourcing Section */}
+    
             <section className="sourcing-section">
                 <h2 className="sourcing-title">How We Source Our Ingredients</h2>
                 <p className="sourcing-desc">
@@ -138,7 +137,7 @@ function Ingredients() {
                 <div className="sourcing-cards">
                     <div className="sourcing-card">
                         <div className="sourcing-icon sourcing-icon-pink">
-                            {/* Shield Icon */}
+                    
                             <svg width="48" height="48" fill="none"><circle cx="24" cy="24" r="22" fill="#f8a7b5" /><path d="M24 15c4 0 7 3 7 7v5c0 4-3 8-7 8s-7-4-7-8v-5c0-4 3-7 7-7Z" stroke="#fff" strokeWidth="2" /></svg>
                         </div>
                         <div className="sourcing-card-title">Certified Pure</div>
@@ -146,7 +145,7 @@ function Ingredients() {
                     </div>
                     <div className="sourcing-card">
                         <div className="sourcing-icon sourcing-icon-pink">
-                            {/* Leaf Icon */}
+                 
                             <svg width="48" height="48" fill="none"><circle cx="24" cy="24" r="22" fill="#f8a7b5" /><path d="M32 20c-7 0-14 7-14 14" stroke="#fff" strokeWidth="2" strokeLinecap="round" /><path d="M18 34c0-7 7-14 14-14" stroke="#fff" strokeWidth="2" strokeLinecap="round" /></svg>
                         </div>
                         <div className="sourcing-card-title">Sustainably Sourced</div>
@@ -154,7 +153,7 @@ function Ingredients() {
                     </div>
                     <div className="sourcing-card">
                         <div className="sourcing-icon sourcing-icon-pink">
-                            {/* Lab Icon */}
+    
                             <svg width="48" height="48" fill="none"><circle cx="24" cy="24" r="22" fill="#f8a7b5" /><rect x="16" y="12" width="16" height="20" rx="4" stroke="#fff" strokeWidth="2" /><path d="M16 24h16" stroke="#fff" strokeWidth="2" /></svg>
                         </div>
                         <div className="sourcing-card-title">Lab Tested</div>

@@ -6,7 +6,6 @@ const SerumCard = ({ serum, quantity, onQuantityChange, onAddToCart }) => (
     <div className="serum-card">
         <div className="serum-img-container">
             <img src={serum.img} alt={serum.name} className="serum-img" />
-            {/* <span className="serum-new-badge">New</span> */}
         </div>
         <div className="serum-info">
             <h3 className="serum-name">{serum.name}</h3>

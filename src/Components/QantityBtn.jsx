@@ -4,7 +4,7 @@ import '../Style/Qantity.css';
 const QantityBtn = ({ value = 1, onChange, min = 1, max = 99 }) => {
     const [count, setCount] = useState(Number(value) || 1);
 
-    // sync with prop value
+
     useEffect(() => {
         setCount(Number(value) || 1);
     }, [value]);
@@ -12,13 +12,13 @@ const QantityBtn = ({ value = 1, onChange, min = 1, max = 99 }) => {
     const increment = () => {
         const newVal = Math.min(max, count + 1);
         setCount(newVal);
-        if (onChange) onChange(newVal);   // always pass number
+        if (onChange) onChange(newVal);  
     };
 
     const decrement = () => {
         const newVal = Math.max(min, count - 1);
         setCount(newVal);
-        if (onChange) onChange(newVal);   // always pass number
+        if (onChange) onChange(newVal); 
     };
 
     return (

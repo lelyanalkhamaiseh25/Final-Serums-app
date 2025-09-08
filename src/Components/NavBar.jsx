@@ -39,7 +39,6 @@ const NavBar = ({ user, onLogout }) => {
                             Logout
                         </button>
 
-                        {/* ✅ Only show Cart if user is NOT admin */}
                         {user?.role !== "admin" && (
                             <Link to="/Cart" className="navBtn">
                                 Cart
