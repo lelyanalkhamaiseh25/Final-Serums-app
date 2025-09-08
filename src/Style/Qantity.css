@@ -1,0 +1,40 @@
+.quantity-btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.qty-btn {
+    background: #ff8a9c;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.qty-btn:hover {
+    background: #f8b694;
+}
+
+.serum-qty {
+    display: inline-block;
+    min-width: 24px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0.5rem;
+    color: #2b2329;
+    background: #f8f8f8;
+    border-radius: 8px;
+    padding: 0.2rem 0.7rem;
+}
