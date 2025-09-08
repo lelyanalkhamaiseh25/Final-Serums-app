@@ -5,7 +5,7 @@ import "../Style/Login.css";
 const Login = ({ onLogin }) => {
     const [isSignup, setIsSignup] = useState(false);
 
-    // fields
+ 
     const [fullName, setFullName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -14,7 +14,7 @@ const Login = ({ onLogin }) => {
     const navigate = useNavigate();
 
     const handleSubmit = async () => {
-        // basic checks
+
         if (isSignup) {
             if (!fullName || !email || !password || !confirmPassword) {
                 alert("Please fill in all fields");
@@ -35,7 +35,6 @@ const Login = ({ onLogin }) => {
             ? "http://localhost:5000/api/auth/signup"
             : "http://localhost:5000/api/auth/login";
 
-        // for signup we also send fullName + confirmPassword, role fixed to "user"
         const body = isSignup
             ? { email, password, confirmPassword, fullName, role: "user" }
             : { email, password };

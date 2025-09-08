@@ -6,18 +6,18 @@ function Shop({ user }) {
     const [serums, setSerums] = useState([]);
     const [counts, setCounts] = useState([]);
 
-    // Fetch products from backend
+
     useEffect(() => {
         fetch("http://localhost:5000/api/products")
             .then((res) => res.json())
             .then((data) => {
                 setSerums(data);
-                setCounts(Array(data.length).fill(1)); // start with quantity = 1
+                setCounts(Array(data.length).fill(1)); 
             })
             .catch((err) => console.error("Error fetching products:", err));
     }, []);
 
-    // Update quantity for a given index
+ 
     const handleQuantityChange = (idx, value) => {
         setCounts((prev) => {
             const updated = [...prev];
@@ -26,7 +26,7 @@ function Shop({ user }) {
         });
     };
 
-    // Add product to cart
+
     const handleAddToCart = async (idx) => {
         if (!user) {
             alert("You must be logged in to add products to the cart.");
@@ -41,9 +41,9 @@ function Shop({ user }) {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
-                    email: user.email,       // current logged-in user
-                    product_id: product.id,  // product ID from DB
-                    quantity: qty,           // chosen quantity
+                    email: user.email,      
+                    product_id: product.id,  
+                    quantity: qty,           
                 }),
             });
 

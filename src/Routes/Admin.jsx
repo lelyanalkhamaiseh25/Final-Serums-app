@@ -11,7 +11,6 @@ function Admin({ user }) {
         img: "",
     });
 
-    // Fetch all products
     useEffect(() => {
         fetchProducts();
     }, []);
@@ -22,7 +21,6 @@ function Admin({ user }) {
         setProducts(data);
     };
 
-    // Add product
     const handleAddProduct = async (e) => {
         e.preventDefault();
         await fetch("http://localhost:5000/api/products", {
@@ -37,7 +35,6 @@ function Admin({ user }) {
         fetchProducts();
     };
 
-    // Update product
     const handleUpdateProduct = async (e) => {
         e.preventDefault();
         await fetch(`http://localhost:5000/api/products/${editingProduct.id}`, {
@@ -52,7 +49,6 @@ function Admin({ user }) {
         fetchProducts();
     };
 
-    // Delete product
     const handleDeleteProduct = async (id) => {
         await fetch(`http://localhost:5000/api/products/${id}`, {
             method: "DELETE",
@@ -68,7 +64,6 @@ function Admin({ user }) {
             <h1>🛠 Admin Dashboard</h1>
             <p>Welcome {user.email} </p>
 
-            {/* Add Product Form */}
             <div className="admin-form">
                 <h2>Add Product</h2>
                 <form onSubmit={handleAddProduct}>
@@ -103,7 +98,6 @@ function Admin({ user }) {
                 </form>
             </div>
 
-            {/* Products Table */}
             <div className="admin-products">
                 <h2>Manage Products</h2>
                 <table>

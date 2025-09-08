@@ -166,7 +166,6 @@
     font-size: 1.08rem;
 }
 
-/* Responsive */
 @media (max-width: 1100px) {
     .key-ingredients-cards {
         grid-template-columns: 1fr 1fr;
@@ -192,7 +191,6 @@
     }
 }
 
-/* ...existing code... */
 
 .explore-serums-btn {
     display: inline-block;
@@ -214,7 +212,6 @@
     box-shadow: 0 8px 24px 0 rgba(248, 167, 181, 0.18);
 }
 
-/* Sourcing Section */
 .sourcing-section {
     background: #faf6f8;
     padding: 5rem 1rem 5.5rem;
@@ -283,7 +280,7 @@
     line-height: 1.7;
 }
 
-/* Responsive */
+
 @media (max-width: 1100px) {
     .sourcing-cards {
         flex-direction: column;
@@ -297,4 +294,3 @@
     }
 }
 
-/* ...existing code... */
