@@ -9,7 +9,7 @@ import Ingredients from "./Routes/Ingredients";
 import Login from "./Routes/Login";
 import Navbar from "./Components/NavBar";
 import Footer from "./Components/Footer";
-
+import AdminDashboard from "./Routes/Admin";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -42,6 +42,18 @@ function App() {
           <Route path="/Cart" element={<Cart user={user} />} />
           <Route path="/Login" element={<Login onLogin={handleLogin} />} />
 
+          <Route
+            path="/admin"
+            element={
+              user?.role === "admin" ? (
+                <AdminDashboard user={user} />
+              ) : (
+                <h2 style={{ textAlign: "center", marginTop: "50px" }}>
+                  Access Denied
+                </h2>
+              )
+            }
+          />
         </Routes>
         <Footer />
       </Router>
