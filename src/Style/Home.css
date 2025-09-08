@@ -286,3 +286,53 @@
         padding: 2rem 0.5rem;
     }
 }
+
+
+@media (max-width: 767px) {
+    .home-hero-section {
+        min-height: 70vh;
+    }
+
+    .home-image {
+        height: 70vh;
+    }
+
+    .home-content {
+        padding: 0 1rem;
+
+        max-width: 90%;
+    }
+
+    .home-title {
+        font-size: 2rem;
+    }
+
+    .home-desc {
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .home-content .btn,
+    .home-content .btn-primary {
+        width: auto;
+        height: auto;
+        padding: 0.75rem 1.5rem;
+        border-radius: 40px;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .home-image {
+        height: 85vh;
+    }
+
+    .home-hero-section {
+        min-height: 85vh;
+    }
+
+    .home-content {
+        padding: 0 2rem;
+    }
+}

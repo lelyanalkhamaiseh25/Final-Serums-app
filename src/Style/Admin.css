@@ -34,9 +34,15 @@
     cursor: pointer;
 }
 
+.admin-products {
+    width: 100%;
+    overflow-x: auto;
+}
+
 .admin-products table {
     width: 100%;
     border-collapse: collapse;
+    min-width: 600px;
 }
 
 .admin-products th,
@@ -44,19 +50,86 @@
     border: 1px solid #ddd;
     padding: 0.8rem;
     text-align: left;
+    vertical-align: top;
 }
 
 .admin-products th {
     background: #f8f8f8;
+    font-size: 1rem;
 }
 
 .admin-products img {
     border-radius: 6px;
+    max-width: 50px;
+    height: auto;
 }
 
-.AdminBtn {
+.adminBtn {
     background: linear-gradient(90deg, #f48ca5, #f8b694);
     color: white;
     font-weight: bold;
     cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 0.4rem 0.8rem;
+    margin: 0.2rem;
+}
+
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .admin-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .admin-form form input,
+    .admin-form form textarea,
+    .admin-form form button {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    .admin-products th,
+    .admin-products td {
+        font-size: 0.85rem;
+        padding: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-container {
+        padding: 0.8rem;
+    }
+
+    .admin-container h1 {
+        font-size: 1.2rem;
+    }
+
+    .admin-form h2,
+    .admin-products h2 {
+        font-size: 1rem;
+    }
+
+    .adminBtn {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .admin-products table {
+        min-width: 100%;
+    }
+
+    .admin-products th,
+    .admin-products td {
+        font-size: 0.75rem;
+        padding: 0.4rem;
+        word-break: break-word;
+    }
+
+    .admin-products img {
+        max-width: 40px;
+    }
 }

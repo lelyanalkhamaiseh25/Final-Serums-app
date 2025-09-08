@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import homepic4 from "../assets/homepic4.png";
 import SerumCard from "../Components/SerumCard";
 import SkinConcernsCards from "../Components/SkinConcernsCards";
+import Bootstrap from "../Components/Bootstrap";
 
 import "../Style/Home.css";
 
@@ -66,9 +67,9 @@ export const Home = ({ user }) => {   // ✅ accept user from App.jsx
 
     const [joke, setJoke] = useState("");
 
-    
+
     useEffect(() => {
-        fetch("http://localhost:5000/api/jokes/random") 
+        fetch("http://localhost:5000/api/jokes/random")
             .then((res) => res.json())
             .then((data) => {
                 if (data.type === "single") {
@@ -93,10 +94,7 @@ export const Home = ({ user }) => {   // ✅ accept user from App.jsx
                         Discover our carefully curated collection of luxury skincare serums,
                         formulated with the finest ingredients for radiant, healthy skin.
                     </p>
-                    <Link to="/Shop">
-                        <button className="btn btn-primary">Shop Now</button>
-                    </Link>
-
+                    <Bootstrap />
                 </div>
             </div>
 
