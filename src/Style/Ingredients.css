@@ -1,0 +1,300 @@
+.ingredients-hero {
+    width: 100%;
+    min-height: 220px;
+    background: linear-gradient(120deg, #f48ca5 0%, #f8b694 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ingredients-hero-title {
+    color: #fff;
+    font-size: 3.1rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.ingredients-hero-desc {
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 350;
+}
+
+/* ...existing code... */
+
+.key-ingredients-section {
+    background: #fff;
+    padding: 4rem 1rem 5rem;
+    text-align: center;
+}
+
+.key-ingredients-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #2b2329;
+    margin-bottom: 0.7rem;
+}
+
+.key-ingredients-desc {
+    color: #8e8086;
+    font-size: 1.15rem;
+    margin: 0 auto 2.5rem;
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+.key-ingredients-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.2rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.key-ingredient-card {
+    background: linear-gradient(120deg, #fff8fa 0%, #f9f6f8 100%);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(248, 167, 181, 0.10);
+    padding: 2.2rem 2rem 1.7rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.key-ingredient-icon {
+    min-width: 64px;
+    min-height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px 0 rgba(248, 167, 181, 0.13);
+    margin-top: 0.2rem;
+}
+
+.key-ingredient-icon-green {
+    background: radial-gradient(circle, #6edba8 60%, #b6f7d6 100%);
+}
+
+.key-ingredient-icon-pink {
+    background: radial-gradient(circle, #f8a7b5 60%, #f8d6e0 100%);
+}
+
+.key-ingredient-icon-orange {
+    background: radial-gradient(circle, #ffb36b 60%, #ffe0b6 100%);
+}
+
+.key-ingredient-icon-blue {
+    background: radial-gradient(circle, #6edbfa 60%, #b6e8fa 100%);
+}
+
+.key-ingredient-content {
+    flex: 1;
+}
+
+.key-ingredient-name {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #2b2329;
+    margin-bottom: 0.1rem;
+}
+
+.key-ingredient-sub {
+    font-style: italic;
+    color: #b7aeb2;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.key-ingredient-desc {
+    color: #8e8086;
+    font-size: 1.05rem;
+    margin-bottom: 0.7rem;
+}
+
+.key-ingredient-benefits {
+    margin-top: 0.5rem;
+}
+
+.key-ingredient-benefits strong {
+    color: #2b2329;
+    font-size: 1.05rem;
+}
+
+.key-ingredient-benefits ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem 2.2rem;
+    margin: 0.5rem 0 0.2rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+.key-ingredient-benefits ul li {
+    position: relative;
+    padding-left: 1.1em;
+    color: #f48ca5;
+    font-size: 1.02rem;
+}
+
+.key-ingredient-benefits ul li:before {
+    content: '';
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    background: #f48ca5;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0.45em;
+}
+
+.key-ingredient-conc {
+    color: #b7aeb2;
+    font-size: 1.01rem;
+    margin-top: 0.3rem;
+}
+
+.key-ingredient-conc span {
+    color: #f48ca5;
+    font-weight: 600;
+    font-size: 1.08rem;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .key-ingredients-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .key-ingredients-cards {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .key-ingredient-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem 1rem 1.2rem;
+    }
+
+    .key-ingredient-content {
+        width: 100%;
+    }
+}
+
+/* ...existing code... */
+
+.explore-serums-btn {
+    display: inline-block;
+    margin: 2.5rem auto 0;
+    padding: 1rem 2.5rem;
+    background: linear-gradient(90deg, #f48ca5 0%, #f8b694 100%);
+    color: #fff;
+    font-size: 1.18rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px 0 rgba(248, 167, 181, 0.13);
+    text-decoration: none;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.explore-serums-btn:hover {
+    background: linear-gradient(90deg, #f8b694 0%, #f48ca5 100%);
+    box-shadow: 0 8px 24px 0 rgba(248, 167, 181, 0.18);
+}
+
+/* Sourcing Section */
+.sourcing-section {
+    background: #faf6f8;
+    padding: 5rem 1rem 5.5rem;
+    text-align: center;
+}
+
+.sourcing-title {
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #2b2329;
+    margin-bottom: 1.1rem;
+}
+
+.sourcing-desc {
+    color: #8e8086;
+    font-size: 1.18rem;
+    margin: 0 auto 3.2rem;
+    max-width: 800px;
+    line-height: 1.7;
+}
+
+.sourcing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sourcing-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(248, 167, 181, 0.10);
+    padding: 2.5rem 2rem 2.2rem;
+    width: 320px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sourcing-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #f8a7b5 60%, #f8d6e0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 6px 18px 0 rgba(248, 167, 181, 0.13);
+}
+
+.sourcing-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2b2329;
+    margin-bottom: 0.7rem;
+}
+
+.sourcing-card-desc {
+    color: #8e8086;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .sourcing-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .sourcing-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* ...existing code... */

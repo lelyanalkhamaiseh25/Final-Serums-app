@@ -1,0 +1,157 @@
+.skinconcerns-hero {
+    width: 100%;
+    min-height: 220px;
+    background: linear-gradient(120deg, #f48ca5 0%, #f8b694 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem 2.5rem;
+}
+
+.skinconcerns-hero-title {
+    color: #fff;
+    font-size: 3.1rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.skinconcerns-hero-desc {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 350;
+    max-width: 600px;
+}
+
+.skinconcerns-section {
+    background: #fff;
+    text-align: center;
+}
+
+.skinconcerns-section-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #2b2329;
+    margin-bottom: 0.7rem;
+    margin-top: 1rem;
+}
+
+.skinconcerns-section-desc {
+    color: #8e8086;
+    font-size: 1.15rem;
+    margin: 0 auto 2.5rem;
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+
+.howtouse-section {
+    background: #f7f2f5;
+    padding: 5rem 1rem 2rem;
+    text-align: center;
+}
+
+.howtouse-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #2b2329;
+    margin-bottom: 1rem;
+}
+
+.howtouse-steps {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.howtouse-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+}
+
+.howtouse-step-circle {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(120deg, #ffa3b9 0%, #ffc4a6 100%);
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 600;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 8px 32px 0 rgba(248, 167, 181, 0.13);
+}
+
+.howtouse-step-label {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #2b2329;
+    margin-bottom: 0.5rem;
+}
+
+.howtouse-step-desc {
+    color: #a39399;
+    font-size: 1.25rem;
+    margin-bottom: 0.2rem;
+}
+
+.skinconcerns-shop-btn {
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 1rem 2.5rem;
+    background: linear-gradient(90deg, #f48ca5 0%, #f8b694 100%);
+    color: #fff;
+    font-size: 1.18rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px 0 rgba(248, 167, 181, 0.13);
+    text-decoration: none;
+    transition: background 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.skinconcerns-shop-btn:hover {
+    background: linear-gradient(90deg, #f8b694 0%, #f48ca5 100%);
+    box-shadow: 0 8px 24px 0 rgba(248, 167, 181, 0.18);
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .howtouse-steps {
+        gap: 2.5rem;
+    }
+
+    .howtouse-step {
+        width: 180px;
+    }
+
+    .howtouse-step-circle {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .howtouse-steps {
+        flex-direction: column;
+        gap: 2.2rem;
+        align-items: center;
+    }
+
+    .howtouse-step {
+        width: 100%;
+        max-width: 320px;
+    }
+}
