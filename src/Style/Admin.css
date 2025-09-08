@@ -1,0 +1,62 @@
+.admin-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.admin-container h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.admin-form {
+    margin-bottom: 2rem;
+}
+
+.admin-form form input,
+.admin-form form textarea,
+.admin-form form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.admin-form form button {
+    background: linear-gradient(90deg, #f48ca5, #f8b694);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admin-products table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-products th,
+.admin-products td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.admin-products th {
+    background: #f8f8f8;
+}
+
+.admin-products img {
+    border-radius: 6px;
+}
+
+.AdminBtn {
+    background: linear-gradient(90deg, #f48ca5, #f8b694);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
