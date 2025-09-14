@@ -4,11 +4,10 @@ function Bootstrap() {
     return (
         <>
             <Link to="/Shop">
-                <Button variant="primary">Shop Now</Button>
-            </Link >
+                <Button variant="primary" className="home-shop-btn">Shop Now</Button>
+            </Link>
         </>
     );
 }
 
 export default Bootstrap
-
